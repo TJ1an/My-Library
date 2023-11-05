@@ -1,0 +1,129 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: none;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+    z-index: 100;
+    gap: 40px;
+}
+
+.header button{
+    height: 40px;
+    width: 80px;
+    margin-top: 25px;
+    border-radius: 20px;
+    border: none;
+    flex-shrink: 0;
+    background-color: lightgrey;
+}
+
+.addBook{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.addBook button{
+    border: none;
+    width: 100px;
+    height: 40px;
+    background-color: lightgrey;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    position: sticky;
+}
+
+.addBook button:hover{
+    background-color: grey;
+    color: white;
+}
+
+.header button:hover{
+    background-color: grey;
+    color: white;
+}
+
+#popup-window {
+    margin:auto;
+    display: flex;
+    display: none;
+    width: 300px;
+    height: 250px;
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10; 
+    position: fixed;
+    border-radius: 20px;;
+  }
+
+.add-book-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;;
+}
+
+.submitbtn{
+    height: 40px;
+    width: 80px;
+    border-radius: 20px;
+    border: none;
+    flex-shrink: 0;
+    background-color: lightgrey;
+}
+
+.submitbtn:hover{
+    background-color: grey;
+    color: white;
+}
+
+body{
+    margin-bottom: 1000px;
+    font-family: 'Poppins', sans-serif;;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+.library-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.book-card{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+    gap: 8px;
+    border: solid;
+}
